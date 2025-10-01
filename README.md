@@ -3,7 +3,7 @@
 A simplified implementation of the Unix wc (word count) command written in Node.js.
 This project supports counting bytes, lines, words, and characters from files or standard input.
 
-Features
+# Features
 
 -c → count bytes
 -l → count lines
@@ -12,7 +12,7 @@ Features
 Default (no option) → outputs lines, words, bytes (like GNU wc)
 Works with both files and stdin
 
-Usage
+# Usage
 
 Run on a file
 node ccwc.js -c test.txt
@@ -31,15 +31,20 @@ Output:
 
 Examples
 
-# Count bytes
+Count bytes
 ./ccwc.js -c test.txt
-# Count lines
+
+Count lines
 ./ccwc.js -l test.txt
-# Count words
+
+Count words
 ./ccwc.js -w test.txt
-# Count characters
+
+Count characters
 ./ccwc.js -m test.txt
-# Default: lines, words, bytes
+
+Default: lines, words, bytes
 ./ccwc.js test.txt
-# Using stdin
+
+Using stdin
 cat test.txt | ./ccwc.js -w
